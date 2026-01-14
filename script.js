@@ -29,7 +29,7 @@ setInterval(switchImage,5000);
 // Banner text animation -------------------
 
 const bannerContent = document.getElementById('bannercontent');
-let messageHTML = '<span class="contact-message">Contact Me at email@example.com - I\'am here to make your wbesite better! </span>';
+let messageHTML = '<span class="contact-message">Contact Me at zakariahaddad@proton.me - I\'am here to make your wbesite better! </span>';
 let repeatedMessage = messageHTML.repeat(10);
 
 // set the repeated message as the content
