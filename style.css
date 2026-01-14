@@ -407,28 +407,32 @@ footer {
 
 .social-media-icons {
  width: 100%;
- font-size: 30px;
+ font-size: 45px;
  position: absolute;
  bottom: 60px;
  display: flex;
  justify-content: center;
- 
+
 }
 
 
-.social-media-icons i {
+.social-media-icons a  {
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.7, 1.7);
   }
 }
 .social-media-icons:hover > .fa-brands:not(:hover) {
   transform: scale(1, 1);
   filter: blur(5px);
-  transition: transform 0.8s ease, filter 0.8s ease;
+  transition: transform 0.8s ease-in-out, filter 0.8s ease-in-out;
 }
-
+a {
+  color: white;
+  text-decoration: none;
+margin: 10px;
+}
 
 
 
@@ -486,6 +490,9 @@ footer small {
   .about-grid {
     width: 80vw;
   }
+  .scroller {
+    width: 600px;
+  }
 
   .text-box {
     padding: 50px;
@@ -524,7 +531,9 @@ footer small {
 
 @media screen and (max-width:600px) {
   
-
+ .scroller {
+    width: 150%;
+  }
   .section-title h2 {
     font-size: 3rem ;
   }
@@ -555,7 +564,7 @@ footer small {
 /* scroller - skills */
 
 .scroller {
-  max-width: 800px;
+  max-width: 600px;
 }
 li {
  letter-spacing: 2px;
@@ -651,4 +660,8 @@ body {
 
 i {
   padding-right : 10px;
+}
+
+.fa-brands {
+  font-size: 2rem;
 }
